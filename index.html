@@ -3,301 +3,673 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akshat Portfolio.</title>
-  <!-- Css file linked. -->
-  <link rel="stylesheet" href="./style.css"/>
-  <!-- Bootstarp cdn file linked. -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <!-- Tailwind css cdn linked. -->
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
-  <!-- Animate.css linked through cdn and installed with npm. -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- Lottie file linked. -->
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <!-- Jquery linked. -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- Aos library linked.  -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- Scroll.js linked. -->
-  <script src="../js/scroll.js"></script>
+  <link rel="icon" href="./assets/img/h1.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <!-- =====BOX ICONS===== -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <!--===== SCROLL REVEAL =====-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Akshat Gupta</title>
 </head>
+
 <body>
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <!-- &#60;&#62; -->
+        <!-- <a href="#home" class="nav-logo"><img src="./assets/img/h.png" height="70px" alt="H" /></a> -->
+        <h3 id="home"> 
+          <a href="#home">Akshat's Portfolio</a>
+        </h3>
 
-    <canvas id="canvas"></canvas>
-    <!--Main view section -: -->
-    <section id="MainView">
-      <div class="row animate__animated animate__bounceInRight" style="animation-duration: 4s">
-        <div class="col-lg-6">
-          <h1 class="MainText MainHeading" style="color: #6445d4">Hello!</h1>
-          <br />
-          <h3 class="MainText MainHeading">This is Akshat.</h3>
-          <p class="MainText subText">Programmer and Developer</p>
-          <p class="MainText">
-            If you want to talk about Web Development, Data Structures and Algorithms, and DevOps then reach me.
+      </div>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link home active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#technologies" class="nav-link technologies">Technologies</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://akshato2.hashnode.dev/" target="_blank" class="nav-link about">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link contact">Contact</a>
+          </li>
+          <li class="nav-item">
+          <a href = "#" onclick="myFunction()"> <img src="./assets/img/sumoon.png" alt="" height="20px" width="20px" style="background-color: transparent;"> </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid section" id="home">
+      <div class="home-data">
+        <h2 class="home-title">
+          Hi 👋,<br />I'am <span class="home-title-color">Akshat Gupta</span><br />
+         <div class="text" id="jobTitle" ></div> 
+        </h2>
+
+        <a href="https://drive.google.com/file/d/1H08bwDDtPX0422uX1svMEH1xnSEEX1Zt/view?usp=sharing" target="_blank"
+          class="button">Resume</a>
+
+      </div>
+
+      <div class="home-social">
+        <a href="https://www.linkedin.com/in/akshat-gupta-4414ab22a/" target="_blank" class="home-social-icon"><i
+            class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/akshat-o5" target="_blank" class="home-social-icon"><i
+            class="bx bxl-github"></i></a>
+      </div>
+
+      <div class="home-img">
+        <img src="assets/img/profile.gif" alt="" />
+      </div>
+    </section>
+
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+
+      <div class="about-container bd-grid">
+        <div class="about-img">
+          <img src="assets\img2\me.jpg" alt="" />
+        </div>
+
+        <div style="text-align: center">
+          <h2 class="about-subtitle">I'am Akshat Gupta</h2>
+          <p class="about-text">
+            Quick learner and an aspiring data analyst along with knowlege of problem solving with C++. Looking for fresher roles.
           </p>
-          <div class="buttons">
-            <button class="
-                  bg-white
-                  hover:bg-gray-100
-                  text-white-800
-                  font-semibold
-                  py-2
-                  px-4
-                  border border-gray-400
-                  rounded
-                  shadow
-                  transform
-                  motion-safe:hover:scale-110
-                ">
-              <a href="https://www.linkedin.com/in/akshat-gupta-4414ab22a/" target="_blank">CONNECT</a>
-            </button>
-          </div>
-          </div>
-      
-        <div class="col-lg-6">
-          <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_vnikrcia.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+          <br />
+          
+          <p>
+            Drop a mail a.akshat903@gmail.com
+            <i style="color: #4070f4; font-size: 1.2rem; cursor: pointer" class="bx bx-copy" id="copy"></i>
+          </p>
         </div>
       </div>
-  
     </section>
+
+
+    <!---========Education ======--->
+    <section class="education section" id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="education-container bd-grid">
     
-    <!-- Mid view section -: -->
-  
-    <section id="MidView" data-aos="fade-right" data-aos-duration="3000" data-aos-easing="linear">
-      <div class="
-            MidViewDesign
-            shadow-lg
-            rounded-lg
-            h-18
-            z-10
-            animate__animated 
-            animate__bounceInRight
-            ">
-        <div class="row">
-          <div class="col-lg-6">
-            <h1 class="HeadingText">KNOW ME</h1>
-            <p class="pText">
-              - Second year student pursuing Computer Science Engineering from SRM Institute of Science and Technology.
-            </p>
-            <p class="pText">
-              - I completed my schooling from La Martiniere College.
-            </p>
-            <p class="pText">- I have keen interest in DevOps.</p>
-            <p class="pText">- I hate redundant code.</p>
-          </div>
-          <div class="col-lg-6">
-            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_w51pcehl.json"
-              class="programImage sm\:text-center" background="transparent" speed="1.5"
-              style="width: 300px; height: 300px" loop autoplay></lottie-player>
+        <div class="education-data">
+          <div class="education-names">
+            <!-- <i class="bx bxl-html5 skills-icon"></i> -->
+            <span class="education-name">12th</span> 
+            <p class="education-platform ">La Martiniere College</p>
+            <p class="education-duration ">July 2018 - July 2020</p>
+
           </div>
         </div>
+        </div>
+      <div class="education-container bd-grid">
+    
+    <div class="education-data">
+      <div class="education-names">
+        <!-- <i class="bx bxl-html5 skills-icon"></i> -->
+        <span class="education-name">B.Tech(Computer Science Engineering)</span>
+        <p class="education-platform ">SRM Institute of Science and Technology</p>
+        <p class="education-duration ">September 2020 - July 2024</p>
+
       </div>
-    </section>
-   
-    <!-- MidOneView section -: -->
-  
-    <section id="MidOneView" style="text-align: center" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="3000">
-      <div class="
-            MidOneView
-            shadow-md
-            rounded-lg
-            h-18
-            z-20
-            animate__animated 
-            animate__bounceInRight
-          " style="animation-duration: 4s">
-        <div class="row">
-          <div class="col-lg-6">
-            <lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_lbn31mn4.json"
-              class="codeView sm\:text-center" background="transparent" speed="1.5" style="width: 300px; height: 300px"
-              loop autoplay></lottie-player>
+    </div>
+    </div>
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-container bd-grid">
+        <div>
+          <!-- <h2 class="skills-subtitle">Front-end Skills</h2> -->
+          <div class="skills-data">
+            <div class="skills-names">
+              <i class="bx bxl-html5 skills-icon"></i>
+              <span class="skills-name">HTML</span>
+            </div>
+            <!-- <div class="skills-bar skills-html"></div> 
+             <div>
+                <span class="skills-percentage">75%</span>
+              </div>  -->
           </div>
-          <div class="col-lg-6">
-            <h1 class="HeadingText">LANGUAGES</h1>
-            <div class="row">
-              <div class="col-lg-6">
-                <p class="pText">C++</p>
-                <p class="pText">Java</p>
-                <p class="pText">Shell Scripting</p>
+          <div class="skills-data">
+            <div class="skills-names">
+              <i class="bx bxl-css3 skills-icon"></i>
+              <span class="skills-name">CSS</span>
+            </div>
+             <!-- <div class="skills-bar skills-css"></div>  -->
+            <!-- <div>
+                <span class="skills-percentage">70%</span>
+              </div>  -->
+          </div>
+          <div class="skills-data">
+            <div class="skills-names">
+              <i class="bx bxl-javascript skills-icon"></i>
+              <span class="skills-name">JavaScript</span>
+            </div>
+            <!-- <div class="skills-bar skills-css"></div>  -->
+            <div>
+                <!-- <span class="skills-percentage">70%</span> -->
+              </div> 
+
+          </div>
+          <div class="skills-data">
+            <div class="skills-names">
+              <i class="bx bxl-react skills-icon"></i>
+              <span class="skills-name">React</span>
+            </div>
+            <!-- <div class="skills-bar skills-react"></div> -->
+            <div>
+                <!-- <span class="skills-percentage">50%</span> -->
               </div>
-              <div class="col-lg-6">
-                <p class="pText">HTML</p>
-                <p class="pText">CSS</p>
-              </div>
+          </div>
+          <div class="skills-data">
+            <div class="skills-names">
+              <!-- <i class="bx bxl-redux skills-icon"></i> -->
+              <img class="skills-icon" src="assets\img2\c-.png" alt="" />
+              <span class="skills-name">C++</span>
+            </div>
+            <!-- <div class="skills-bar skills-redux"></div>  -->
+            <!-- <div class="skills-bar skills-css"></div>  -->
+            <div>
+                <!-- <span class="skills-percentage">50%</span> -->
+              </div> 
+
+          </div>
+
+          <div class="skills-data">
+            <div class="skills-names">
+              <img class="skills-icon" src="assets\img2\database.png" alt="" />
+              <span class="skills-name">SQL</span>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    
-     <!-- MidTwoView section -: -->
-  
-  <!--  <section id="MidTwoView" data-aos="fade-right" data-aos-duration="3000" data-aos-easing="linear">
-      <div class="
-            MidTwoView
-            shadow-lg
-            rounded-lg
-            h-18
-            z-30
-            animate__animated animate__bounceInLeft
-          " style="animation-duration: 4s">
-        <div class="row">
-          <div class="col-lg-6">
-            <h1 class="HeadingText" style="text-align: center">FRAMEWORKS</h1>
-            <div class="row">
 
-                <p class="pText" style="text-align: center">- JQUERY , NODE.JS , EXPRESS.JS , NODEMON</p>
-                <p class="pText" style="text-align: center">- HEROKU , MONGO DB , ROBO 3T , DOCKER</p>
-                <p class="pText" style="text-align: center">- FIREBASE , REALM , XCODE , BOOTSTRAP</p>
-                <p class="pText" style="text-align: center">- TAILWIND , EJS , POSTMAN , MONGOOSE</p>
+          <div class="skills-data">
+            <div class="skills-names">
+              <img class="skills-icon" src="assets\img2\tailwind.png" alt="" />
+              <span class="skills-name">Tailwind CSS</span>
+            </div>
+
+          </div>
+
+        </div>
+        <div>
+          <!-- <h2 class="skills-subtitle">Back-end Skills</h2> -->
+          <div class="skills-data">
+            <div class="skills-names">
+              <img class="skills-icon" src="assets\img2\java.png" alt="" />
+              <span class="skills-name">Java</span>
+            </div>
+            <!-- <div class="skills-bar skills-css"></div>  -->
+            <div>
+                <!-- <span class="skills-percentage">70%</span> -->
+              </div> 
+          </div>
+
+          <div class="skills-data">
+            <div class="skills-names">
+              <!-- <i class="bx bxl-nodejs skills-icon"></i> -->
+              <img class="skills-icon" src="assets\img2\python.png" alt="" />
+              <span class="skills-name">Python</span>
+            </div>
+            <!-- <div class="skills-bar skills-css"></div> -->
+            <div>
+                <!-- <span class="skills-percentage">70%</span> -->
+              </div> 
+          </div>
+
+          <div class="skills-data">
+            <div class="skills-names">
+              <img class="skills-icon" src="assets\img2\numpy.png" alt="" />
+              <span class="skills-name">Numpy</span>
+            </div>
+            <!-- <div class="skills-bar skills-css"></div>  -->
+            <div>
+                <!-- <span class="skills-percentage">70%</span> -->
+              </div> 
+          </div>
+          <div>
+             <!-- <h2 class="skills-subtitle">TOOLS</h2> --> 
+             <div class="skills-data">
+              <div class="skills-names">
+                <img class="skills-icon" src="assets\img2\pandas.png" alt="" />
+                <span class="skills-name">Pandas</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img class="skills-icon" src="assets\img2\seaborn.jpeg" alt="" />
+                <span class="skills-name">Seaborn</span>
+              </div>
 
             </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img class="skills-icon" src="assets\img2\matplotlib.png" alt="" />
+                <span class="skills-name">Matplotlib</span>
+              </div>
+
+            </div> 
+
           </div>
-          <div class="col-lg-6">
-            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_s0csja4b.json"
-              class="codeView sm\:text-center" background="transparent" speed="1.5" style="width: 300px; height: 300px"
-              loop autoplay></lottie-player>
+
+
+
+          <div>
+            <!-- <h2 class="skills-subtitle">TOOLS</h2> --> 
+            <div class="skills-data">
+             <div class="skills-names">
+               <img class="skills-icon" src="./assets/img/github.svg" alt="" />
+               <span class="skills-name">Bootstrap</span>
+             </div>
+           </div>
+           <!-- <div class="skills-data">
+             <div class="skills-names">
+               <img class="skills-icon" src="./assets/img/git.png" alt="" />
+               <span class="skills-name">Tailwind CSS</span>
+             </div>
+
+           </div> -->
+           <!-- <div class="skills-data">
+             <div class="skills-names">
+               <img class="skills-icon" src="./assets/img/dsa.png" alt="" />
+               <span class="skills-name">Matplotlib</span>
+             </div>
+
+           </div>  -->
+
+         </div>
+        </div>
+    </section>
+
+
+
+
+
+
+<!--===== SKILLS =====-->
+<section class="skills section" id="technologies">
+  <h2 class="section-title">Technologies</h2>
+
+  <div class="skills-container bd-grid">
+    <div>
+      <!-- <h2 class="skills-subtitle">Front-end Skills</h2> -->
+      <div class="skills-data">
+        <div class="skills-names">
+          <!-- <i class="bx bxl-html5 skills-icon"></i> -->
+          <img class="skills-icon" src="assets\img2\visual-studio.png" alt="" />
+          <span class="skills-name">VS Code</span>
+        </div>
+        <!-- <div class="skills-bar skills-html"></div> 
+         <div>
+            <span class="skills-percentage">75%</span>
+          </div>  -->
+      </div>
+      <div class="skills-data">
+        <div class="skills-names">
+          <!-- <i class="bx bxl-css3 skills-icon"></i> -->
+          <img class="skills-icon" src="./assets/img/github.svg" alt="" />
+          <span class="skills-name">Git</span>
+        </div>
+         <!-- <div class="skills-bar skills-css"></div>  -->
+        <!-- <div>
+            <span class="skills-percentage">70%</span>
+          </div>  -->
+      </div>
+      <div class="skills-data">
+        <div class="skills-names">
+          <!-- <i class="bx bxl-javascript skills-icon"></i> -->
+          <img class="skills-icon" src="./assets/img/github.svg" alt="" />
+          <span class="skills-name">Github</span>
+        </div>
+        <!-- <div class="skills-bar skills-css"></div>  -->
+        <div>
+            <!-- <span class="skills-percentage">70%</span> -->
+          </div> 
+
+      </div>
+      <!-- <div class="skills-data"> -->
+        <!-- <div class="skills-names">
+          <i class="bx bxl-react skills-icon"></i>
+          <span class="skills-name">Jupyter Notebook</span>
+        </div> -->
+        <!-- <div class="skills-bar skills-react"></div> -->
+        <div>
+            <!-- <span class="skills-percentage">50%</span> -->
+          </div>
+      <!-- </div> -->
+      <!-- <div class="skills-data"> -->
+        <!-- <div class="skills-names">
+          <i class="bx bxl-redux skills-icon"></i>
+          <span class="skills-name">MySQL</span>
+        </div> -->
+        <!-- <div class="skills-bar skills-redux"></div>  -->
+        <!-- <div class="skills-bar skills-css"></div>  -->
+        <div>
+            <!-- <span class="skills-percentage">50%</span> -->
+          </div> 
+
+      <!-- </div> -->
+
+      <!-- <div class="skills-data">
+        <div class="skills-names">
+          <img class="skills-icon" src="./assets/img/typescript.png" alt="" />
+          <span class="skills-name">Tableau</span>
+        </div>
+      </div> -->
+    </div>
+    <div>
+      <!-- <h2 class="skills-subtitle">Back-end Skills</h2> -->
+      <div class="skills-data">
+        <div class="skills-names">
+          <img class="skills-icon" src="assets\img2\jupyter.png" alt="" />
+          <span class="skills-name">Jupyter Notebook</span>
+        </div>
+        <!-- <div class="skills-bar skills-css"></div>  -->
+        <div>
+            <!-- <span class="skills-percentage">70%</span> -->
+          </div> 
+      </div>
+
+      <div class="skills-data">
+        <div class="skills-names">
+          <!-- <i class="bx bxl-nodejs skills-icon"></i> -->
+          <img class="skills-icon" src="assets\img2\msql.png" alt="" />
+          <span class="skills-name">MySQL</span>
+        </div>
+        <!-- <div class="skills-bar skills-css"></div> -->
+        <div>
+            <!-- <span class="skills-percentage">70%</span> -->
+          </div> 
+      </div>
+
+      <div class="skills-data">
+        <div class="skills-names">
+          <img class="skills-icon" src="assets\img2\icon-tableau.png" alt="" />
+          <span class="skills-name">Tableau</span>
+        </div>
+        <!-- <div class="skills-bar skills-css"></div>  -->
+        <div>
+            <!-- <span class="skills-percentage">70%</span> -->
+          </div> 
+      </div>
+      <div>
+         <!-- <h2 class="skills-subtitle">TOOLS</h2> --> 
+         <!-- <div class="skills-data">
+          <div class="skills-names">
+            <img class="skills-icon" src="./assets/img/github.svg" alt="" />
+            <span class="skills-name">Pandas</span>
           </div>
         </div>
-      </div>
-    </section>-->
-  
-    <!-- MidOneView section repeated inorder to redude the redundant code -: -->
-  
-    <section id="MidOneView" style="text-align: center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="3000">
-      <div class="
-            MidOneView
-            shadow-md
-            rounded-lg
-            h-18
-            z-50
-            animate__animated animate__bounceInRight
-          " style="text-align: center; animation-duration: 4s">
-        <div class="row">
-          <div class="col-lg-6">
-            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_6gfl0jjp.json" class="codeView"
-              background="transparent" speed="1.5" style="width: 340px; height: 340px" loop autoplay></lottie-player>
+        <div class="skills-data">
+          <div class="skills-names">
+            <img class="skills-icon" src="./assets/img/git.png" alt="" />
+            <span class="skills-name">Seaborn</span>
           </div>
-          <div class="col-lg-6">
-            <h1 class="HeadingText">PROJECTS</h1>
-            <p class="pText">Currently, it's being built.</p>
-            <!-- <p class="pText">-Projects are uploaded on github.</p>
-            <p class="pText">CLICK BELOW FOR MY PROJECTS-:</p>
+
+        </div>
+        <div class="skills-data">
+          <div class="skills-names">
+            <img class="skills-icon" src="./assets/img/dsa.png" alt="" />
+            <span class="skills-name">Matplotlib</span>
+          </div>
+
+        </div> 
+
+      </div> -->
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+    <!--===== Projects =====-->
+    <section class="projects section" id="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project-container">
+        <div class="project-img">
+          <img src="assets\img2\cricket.png" alt="cult.fit" />
+          <p class="project-title">Cricket Stats Analysis</p>
+          <p class="project-subtitle">
+            In this project, we analyse the Century dataset of Virat Kohli and predict differnt outcomes and conclusions based upon various patterns. <br />
             <br />
-              <button class="
-              ProjectButton
-              bg-white
-              hover:bg-gray-100
-              text-gray-800
-              font-semibold
-              py-2
-              px-4
-              border border-gray-400
-              rounded
-              shadow
-              transform
-              motion-safe:hover:scale-110...
-              col-lg-4
-            " type="submit">
-          <a href="project.html">Projects</a>
-        </button> -->
+            <br /> Python | Numpy | Pandas | Seaborn | Matplotlib | Jupyter Notebook
+          </p>
+          <div class="project-btns">
+            <a href="https://github.com/akshat-o5/Cricket-Stats-Analysis" target="_blank" class="small-btn button">
+
+              <i class="bx bxl-github"></i>
+            </a>
+            <!-- <a href="https://tusharsahu2599.github.io/medplus/homepage" target="_blank" class="small-btn button">
+              Live
+              <i class="bx bx-link-external"></i>
+            </a> -->
+            <a href="https://akshato2.hashnode.dev/exploratory-data-analysis-century-analysis" target="_blank"
+              class="small-btn button">
+              Blog
+              <i class="bx bx-blog"></i>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="project-img">
+          <img src="assets\img2\library.avif" alt="Reddit.com" />
+          <p class="project-title">Digital Library Management System</p>
+          <p class="project-subtitle">
+            While going through multiple projects of database management systems for libraries, I came up with my personally developed database schema, specially designed for a digital library. I have formulated some new designs such that effective data storage and data retrieval process takes place.
+            <br />
+            <br /> SQL | MySql Workbench
+          </p>
+          <div class="project-btns">
+            <a href="https://github.com/akshat-o5/Digital-Library-Management-System" target="_blank" class="small-btn button">
+
+              <i class="bx bxl-github"></i>
+            </a>
+            <!-- <a href="https://epic-games-web.vercel.app/" target="_blank" class="small-btn button">
+              Live
+              <i class="bx bx-link-external"></i>
+            </a> -->
+            <a href="https://akshato2.hashnode.dev/digital-library-management-system" target="_blank"
+              class="small-btn button">
+              Blog
+              <i class="bx bx-blog"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-img">
+          <img src="assets\img2\1200px-Terrorist_incidents_worldwide.svg.png" alt="cult.fit" />
+          <p class="project-title">Global-Terrorism</p>
+          <p class="project-subtitle">
+            This project is a part of the Data Science and Business Analytics Internship at Sparks Foundation. The objective of this project is to perform Exploratory Data Analysis on the Global Terrorism dataset.
+             <br />
+            <br />Python | Numpy | Pandas | Seaborn | Matplotlib | Jupyter Notebook
+          </p>
+          <div class="project-btns">
+            <a href="https://github.com/akshat-o5/Global-Terrorism" target="_blank" class="small-btn button">
+
+              <i class="bx bxl-github"></i>
+            </a>
+            
+            <!-- <a href="https://tusharsahu2599.github.io/medplus/homepage" target="_blank" class="small-btn button">
+              Live
+              <i class="bx bx-link-external"></i>
+            </a>
+            <a href="https://medium.com/@hgauba4/how-did-our-team-build-the-mednear-clone-241227129f79" target="_blank"
+              class="small-btn button">
+              Blog
+              <i class="bx bx-blog"></i> -->
+            </a>
+          </div>
+        </div>
+        
+        <div class="project-img">
+          <img src="assets/img2/space.png" alt="cult.fit" />
+          <p class="project-title">Space-Bites</p>
+          <p class="project-subtitle">
+            SpaceBites is designed for providing a culinary experience for those living on the Red Planet. The goal of SpaceBites is to create a dinning experience that is both unique and delicious,with an otherwordly ambiance that transports diners to a different word
+            <br />
+            This project is developed by team HackInfy consisting of 5 developers.
+            <br />
+            I handeled the Front-end part of this project
+            <br />
+            <br />HTML | CSS | JavaScript | NodeJS | ExpressJS | MongoDB
+          </p>
+          <div class="project-btns">
+            <a href="https://github.com/akshat-o5/Space-Bites" target="_blank" class="small-btn button">
+
+              <i class="bx bxl-github"></i>
+            </a>
+            
+             <!-- <a href="" target="_blank" class="small-btn button">
+              Live
+              <i class="bx bx-link-external"></i>
+            </a> -->
+
+            <!----
+            <a href="https://medium.com/@hgauba4/how-did-our-team-build-the-mednear-clone-241227129f79" target="_blank"
+              class="small-btn button">
+              Blog
+              <i class="bx bx-blog"></i> -->
+            </a>
+          </div>
+        </div>
+
+        <div class="project-img">
+          <img src="assets\img2\16006.jpeg" alt="Swiggy.com" />
+          <p class="project-title">Diwali Sales Analysis</p>
+          <p class="project-subtitle">
+            In this project, we analyse the diwali sales dataset and predict differnt outcomes and conclusions based upon various patterns.
+            <br />
+            <br />
+            Python | Numpy | Pandas | Seaborn | Matplotlib | Jupyter Notebook
+          </p>
+          <div class="project-btns">
+            <a href="https://github.com/akshat-o5/Diwali-Sales-Analysis" target="_blank"
+              class="small-btn button">
+              <i class="bx bxl-github"></i>
+            </a>
+            <!-- <a href="https://swiggy-bwjc9njal-premkumar-hulikoppe.vercel.app/" target="_blank" class="small-btn button">
+              Live<i class="bx bx-link-external"></i>
+            </a> -->
+          </div>
+        </div>
+
+        <div class="project-img">
+          <img src="assets\img2\mmt.png" alt="Tinde chat" />
+          <p class="project-title">
+            Make my Notes
+          </p>
+          <p class="project-subtitle">
+            Inroducing to you, Make my Notes. An interactive notes taking app with a mesmerizing User Interface Design, created for noting down your daily life.
+            <br />
+            <br />
+           HTML | Vanila CSS | Tailwind CSS | JavaScript
+          </p>
+          <div class="project-btns">
+            <a href="https://github.com/akshat-o5/Make-my-Notes"
+              target="_blank" class="small-btn button">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="https://akshat-o5.github.io/Make-my-Notes/" target="_blank" class="small-btn button">
+              Live<i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-img">
+          <img src="assets\img2\calcu.png" alt="shop app" />
+          <p class="project-title">
+            <br />
+            CalcuMate
+          </p>
+          <p class="project-subtitle">
+            Your own personalized calculator with an attractive User Interface.
+            <br />
+            <br />
+           HTML | CSS | JavaScript
+          </p>
+          <div class="project-btns">
+            <a href="https://github.com/akshat-o5/CalcuMate"
+              target="_blank" class="small-btn button">
+              Code<i class="bx bxl-github"></i>
+            </a>
+            <a href="https://akshat-o5.github.io/CalcuMate/" target="_blank" class="small-btn button">
+              Live<i class="bx bx-link-external"></i>
+            </a>
           </div>
         </div>
       </div>
     </section>
+  </main>
+
+  <!--===== FOOTER + CONTACT=====-->
   
-    <!-- MidView section repeated again inorder to reduce the redundant code -: -->
-  
-    <section id="MidView" style="text-align: center" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="3000">
-      <div class="
-            LastSection
-            shadow-lg
-            rounded-lg
-            h-18
-            z-50
-            animate__animated animate__bounceInLeft
-            z-50
-          " style="animation-duration: 4s">
-        <div class="row">
-          <div class="col-lg-6">
-            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_4DLPlW.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
-          </div>
-          <div class="col-lg-6">
-            <h1 class="HeadingText">RESUME</h1>
-            <br />
-            <ul>
-              <li>
-                <p style="opacity: 0.5">- I HAVE PROVIDED MY RESUME BELOW.</p>
-              </li>
-              <li>
-                <br />
-  
-                <strong>DOWNLOAD MY RESUME FROM BUTTON BELOW-:</strong>
-              </li>
-            </ul>
-            <br />
-            <br />
-            <br />
-            <button class="
-                  resumeButton
-                  bg-white
-                  hover:bg-gray-100
-                  text-white-800
-                  font-semibold
-                  py-2
-                  px-4
-                  border border-gray-400
-                  rounded
-                  shadow
-                ">
-              <a href="AkshatGupta_InternshalaResume.pdf" target="_blank">Resume</a>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-   
-   <!-- Connect with me section for my social media profiles -:-->
-  
-    <section id="ConnectSection" style="text-align: center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="3000">
-      <h1 class="EndText animate__animated animate__bounceInRight">
-        STAY CONNECTED
-      </h1>
-      <br />
-      <p class="lastSubText animate__animated animate__bounceInRight" style="opacity: 0.5">
-        Second year student at SRM Institute of Science and Technology.
-      </p>
-      <h1></h1>
-      <h1></h1>
-      <div class="SocialIcon animate__animated animate__bounceInRight">
-        <a href="https://github.com/akshat-o5" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-        <!-- <a href="https://www.instagram.com/sankalp_.10/"><i class="fab fa-instagram fa-2x"></i></a> -->
-        <a href="https://www.linkedin.com/in/akshat-gupta-4414ab22a/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="https://twitter.com/akshat_o2" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-      </div>
-    </section>
-  
-    <!-- Canvas.js file linked -: -->
-    <script src="../js/canvas.js"></script>
-    <!-- Scroll.js file linked -:-->
-    <script src="../js/scroll.js"></script>
-    <!-- Font awesome added -:-->
-    <script src="https://kit.fontawesome.com/f4d4f77253.js" crossorigin="anonymous"></script>
-    <!-- Jquery script added -:-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Aos libaray linked -:-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- Function for Aos linked -:-->
-    <script>
-      AOS.init();
-    </script>
-  <!-- Canvas tag for background animation. -->
-  <script src="canvas.js"></script>
-  </body>
+  <footer class="footer section" id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="footer-title">Akshat Gupta</p>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/akshat-gupta-4414ab22a/" target="_blank" class="footer-icon"><i
+          class="bx bxl-linkedin">
+          <br />
+          LinkedIn</i></a>
+      <a href="https://twitter.com/akshat_o2" target="_blank" class="footer-icon"><i class="bx bxl-twitter">
+          <br />
+          Twitter</i></a>
+      <a href="mailto:a.akshat903@gmail.com" target="_blank" class="footer-icon"><i class="bx bx-mail-send">
+          <br />
+          E-mail</i></a>
+      <a href="tel:+91 9170756181" target="_blank" class="footer-icon"><i class="bx bx-phone">
+          <br />
+          Phone</i></a>
+      <a href="https://github.com/akshat-o5" target="_blank" class="footer-icon"><i
+            class="bx bxl-github">
+          <br />
+          GitHub
+          </i></a>
+    </div>
+    <p>&#169; 2020 copyright all right reserved</p>
+  </footer>
+
+  <!--===== MAIN JS =====-->
+  <script src="assets/js/main.js"></script>
+
+
+</body>
 
 </html>
