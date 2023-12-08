@@ -108,7 +108,7 @@ sr.reveal(".project-img", { interval: 200 });
 
 
   var textAnimation = document.getElementById('jobTitle');
-  var texts = ["Data Analyst", "Front End Developer", "Programmer", "Blogger"]; // Array of texts to animate
+  var texts = ["Data Analyst", "Backend Developer", "Programmer", "Blogger"]; // Array of texts to animate
   var currentIndex = 0;
   var currentText = '';
   
